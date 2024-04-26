@@ -1,0 +1,135 @@
+header.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 13;
+    padding: 15px 0;
+    transition: 0.3s;
+
+    nav {
+        width: 100%;
+        max-width: calc(100% - 322px);
+        flex: 0 0 calc(100% - 322px);
+        padding-right: 60px;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 60px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-weight: 600;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: #EE7624;
+                    }
+                }
+            }
+        }
+    }
+
+    &.scrollheader {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 5px 0;
+
+        .header__logo {
+            img {
+                max-width: 120px;
+            }
+        }
+    }
+}
+
+.header__logo {
+    img {
+        max-width: 137px;
+        transition: 0.3s;
+    }
+}
+
+.header__section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+
+    .contactbtn {
+        width: 100%;
+        max-width: 192px;
+        flex: 0 0 192px;
+    }
+}
+
+.header__language {
+    margin-right: 60px;
+    width: 100%;
+    max-width: 70px;
+    flex: 0 0 70px;
+    position: relative;
+
+    .current__lang {
+        width: 100%;
+        height: 32px;
+        background: rgba(#0F0F0F, 0.61);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        img {
+            width: 18px;
+            margin-right: 5px;
+        }
+
+        span {
+            text-transform: uppercase;
+            font-size: 15px;
+            color: #fff;
+        }
+    }
+
+    ul {
+        padding: 3px 0;
+        margin: 0;
+        list-style-type: none;
+        background: rgba(#0F0F0F, 0.61);
+        border-radius: 5px;
+        margin-top: 3px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        display: none;
+
+        li {
+
+            a {
+                color: #fff;
+                padding: 2px 10px;
+                text-transform: uppercase;
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+
+}
+
+
+
+
+// 192+60+70
