@@ -33,8 +33,24 @@ h3 {
     line-height: 130%;
     text-transform: uppercase;
     margin-bottom: 60px;
+
+    span {
+        background: linear-gradient(90deg, #B6B6B6, #B4B4B4 22%, #F3F3F3 50%, #C4C4C4 73%, #E2E2E2 85%, #999999);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 
 
@@ -100,9 +116,16 @@ h3 {
     span {
         display: inline-block;
         transform: skew(-20deg);
+        transition: 0.3s;
     }
 
     &:hover {
         color: #fff;
+        transform: skew(-20deg);
+        box-shadow: 5px 5px 10px #9e511a;
+
+        span {
+            transform: skew(20deg);
+        }
     }
 }

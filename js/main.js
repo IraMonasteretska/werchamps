@@ -62,8 +62,20 @@ $(document).ready(function () {
         $('.header').removeClass('scrollheader');
     }
 
+    // FAQ
+    $('.faqheader').click(function () {
+        $(this).toggleClass('rotate');
+        $(this).next('.faqbody').slideToggle();
+    })
 
 
+    // select
+    if ($('select')) {
+        $(".custom-select").select2({
+            placeholder: "Comment pouvons-nous vous aider",
+            minimumResultsForSearch: -1
+        });
+    }
 
 
 })
