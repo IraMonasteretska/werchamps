@@ -856,14 +856,78 @@
 
 // ----------
 
+.socpicleft {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: calc(100% + 30px);
+}
 
+.socdescr {
+    padding-top: 100px;
 
+    .container {
+        position: relative;
+    }
 
+    p {
+        background: linear-gradient(90deg, #B6B6B6, #B4B4B4 22%, #F3F3F3 50%, #C4C4C4 73%, #E2E2E2 85%, #999999);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        margin-bottom: 44px;
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 130%;
+        text-transform: uppercase;
+    }
 
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 0 140px;
 
+        li {
+            display: inline-block;
+            margin-right: 30px;
 
+            &:last-child {
+                margin-right: 0;
+            }
 
+            a {
+                background: linear-gradient(90deg, #F5B324, #EE7624);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 64px;
+                height: 60px;
+                background: linear-gradient(90deg, #F5B324, #EE7624);
+                transform: skew(-20deg);
+                transition: 0.3s;
 
+                img {
+                    transform: skew(20deg);
+                    transition: 0.3s;
+                    max-width: 100%;
+                }
+
+                &:hover {
+                    box-shadow: 5px 5px 10px #9e511a;
+                }
+            }
+        }
+    }
+}
+
+.infosect .textwrap {
+    height: 848px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-direction: column;
+    padding-left: 80px;
+}
 
 @media(min-width:1601px) {
     .infosect {
@@ -877,6 +941,238 @@
     .infosect:after {
         transform: skewY(2deg);
     }
+
+
+}
+
+@media(max-width:1599.8px) {
+    .herosection__textblock h1 {
+        font-size: 42px;
+        max-width: 660px;
+        margin-bottom: 25px;
+    }
+
+    .herosection__textblock p {
+        margin-bottom: 25px;
+    }
+
+    .orangebtn {
+        height: 56px;
+        max-width: 290px;
+    }
+
+    .heroslider .imgwrap {
+        height: 100vh;
+        min-height: 600px;
+    }
+
+    .infosect .textwrap .title {
+        margin-bottom: 30px;
+    }
+
+    .lpicsect {
+        max-width: 850px;
+    }
+
+    .infosect .rings {
+        max-width: 320px;
+        right: 42%;
+    }
+
+    .infosect .textwrap {
+        padding-left: 80px;
+        height: 760px;
+    }
+
+    .champsect__textbox .title .pricebox {
+        font-size: 40px;
+        width: 170px;
+        height: 70px;
+    }
+
+    .testimonials {
+        padding: 120px 0 160px;
+    }
+
+    .testimonials h3 {
+        margin-bottom: 90px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: -116px;
+    }
+
+    .testimonialslide {
+        min-height: 320px;
+    }
+
+    .testimonialslide:after {
+        width: 50px;
+        left: 20px;
+    }
+
+    .faqsection {
+        padding: 120px 0 250px;
+    }
+
+    .faqsection h3 {
+        margin-bottom: 80px;
+    }
+
+    .faqbody {
+        padding-top: 25px;
+    }
+
+    .contactsection {
+        padding: 120px 0 150px;
+    }
+
+
+
+
+
+
+
+    .infosect .textwrap .title {
+        font-size: 30px;
+    }
+
+    .infosect .textwrap p,
+    .faqbody p,
+    .contact__textbox p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1399.8px) {
+
+    .infosect .rings {
+        max-width: 300px;
+        right: 39%;
+    }
+
+
+    .textaect .descr p {
+        font-size: 16px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .infosect .textwrap {
+        padding-left: 40px;
+        height: 820px;
+    }
+
+    .lpicsect {
+        max-width: 920px;
+        left: -140px;
+    }
+
+    .contactform {
+        padding-left: 0;
+    }
+    
+    .infosect:after,
+    .textaect:after,
+    .champsect:after,
+    .testimonials:after,
+    .faqsection:after,
+    .contactsection:after,
+    .socsect:after {
+        background-size: auto 100%;
+    }
+}
+
+@media(max-width:991.8px) {
+    .lpicsect {
+        max-width: 100%;
+        left: 0;
+        opacity: 0.4;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+
+    .infosect .rings {
+        max-width: 270px;
+        right: 0;
+    }
+
+    .infosect .textwrap {
+        height: auto;
+        padding: 200px 0 240px;
+    }
+
+    .infosect:after {
+        bottom: 25px;
+    }
+
+    .testimonialslide {
+        transform: skew(-15deg);
+    }
+
+    .testimonialslide .testimonialslide__descr {
+        transform: skew(15deg);
+    }
+
+    .faqbg {
+        height: auto;
+    }
+
+    .textaect:after {
+        bottom: -2px;
+    }
+
+    .champsect {
+        padding: 80px 0 100px;
+    }
+
+    .testimonials {
+        padding: 80px 0 140px;
+    }
+
+    .faqsection {
+        padding: 80px 0 200px;
+    }
+
+    .contactsection {
+        padding: 80px 0 100px;
+    }
+
+    .contactsection__bg {
+        object-position: 50% 50%;
+    }
+
+    .contactsection h3 {
+        margin-bottom: 20px;
+    }
+
+    .contact__textbox p {
+        margin-bottom: 30px;
+    }
+
+    .socdescr {
+        position: relative;
+        z-index: 2;
+    }
+
+    .socsect__bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 100% 100%;
+    }
+
+    .socpicleft {
+        max-height: 100%;
+        max-width: 500px;
+        left: -100px;
+    }
+
+    
 
 
 }

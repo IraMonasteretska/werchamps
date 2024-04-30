@@ -52,15 +52,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-
-
-
-
-
-
-
-
-
 .contactbtn {
     transform: skew(20deg);
     background: linear-gradient(90deg, rgba(245, 179, 36, 0.4), rgba(238, 118, 36, 0.4));
@@ -128,4 +119,20 @@ input[type=number] {
             transform: skew(20deg);
         }
     }
+}
+
+
+
+
+
+
+@media(max-width:1599.8px) {
+    h3 {
+        font-size: 36px;
+        font-weight: 800;
+        margin-bottom: 40px;
+    }
+
+
+
 }
