@@ -34,6 +34,10 @@ $(document).ready(function () {
             prevEl: ".swiper-button-prev",
         },
         breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
             768: {
                 slidesPerView: 1.2,
                 spaceBetween: 50,
@@ -158,5 +162,8 @@ $(document).ready(function () {
         closeMenu()
         
     });
+
+    // cookie
+   
 
 })

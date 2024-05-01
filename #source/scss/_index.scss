@@ -929,6 +929,10 @@
     padding-left: 80px;
 }
 
+.contactform .orangebtn {
+    display: inline-flex;
+}
+
 @media(min-width:1601px) {
     .infosect {
         transform: skewY(-2deg);
@@ -1073,7 +1077,7 @@
     .contactform {
         padding-left: 0;
     }
-    
+
     .infosect:after,
     .textaect:after,
     .champsect:after,
@@ -1172,7 +1176,193 @@
         left: -100px;
     }
 
-    
 
 
+
+}
+
+@media(max-width:575.8px) {
+
+    .champsect__textbox .title,
+    .infosect .textwrap .title {
+        font-size: 26px;
+    }
+
+    .herosection__textblock h1,
+    .herosection__textblock p {
+        margin-bottom: 15px;
+    }
+
+    .infosect .textwrap {
+        height: auto;
+        padding: 70px 0 140px;
+    }
+
+    .infosect .textwrap .title {
+        margin-bottom: 15px;
+    }
+
+    .lpicsect {
+        object-position: 30% 0;
+        opacity: 0.3;
+    }
+
+    .infosect .rings {
+        max-width: 200px;
+        right: -30px;
+        bottom: 20px;
+    }
+
+    .textaect {
+        padding: 50px 0 120px;
+    }
+
+    .champsect__textbox .title .pricebox {
+        font-size: 30px;
+        width: 140px;
+        height: 50px;
+    }
+
+    .champsect__textbox .title {
+        margin-bottom: 20px;
+    }
+
+    .champsect__textbox ul {
+        padding-left: 0;
+    }
+
+    .testimonialslide p {
+        font-size: 15px;
+    }
+
+    .testimonialslide {
+        padding: 15px 30px 15px 50px;
+        min-height: 290px;
+    }
+
+    .testimonialslide .author:after {
+        width: 40px;
+    }
+
+    .testimonialslide .author {
+        padding-left: 50px;
+    }
+
+    .testimonialslide:after {
+        width: 36px;
+    }
+
+    .testimonials h3 {
+        margin-bottom: 40px;
+    }
+
+    .faqsection h3 {
+        margin-bottom: 40px;
+    }
+
+    .faqsection {
+        padding: 70px 0 100px;
+    }
+
+    .testimonials:after {
+        bottom: -3px;
+    }
+
+    .faqheader:before {
+        width: 24px;
+        height: 24px;
+        top: 2px;
+    }
+
+    .faqheader {
+        padding: 0 40px 0 35px;
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .faqheader:after {
+        width: 40px;
+        height: 40px;
+    }
+
+    .faqbox {
+        margin-bottom: 35px;
+    }
+
+    .faqbody {
+        padding: 15px 15px 0 15px;
+    }
+
+    .contactsection {
+        padding: 70px 0 100px;
+    }
+
+    .contact__textbox p {
+        br {
+            display: none;
+        }
+    }
+
+    .inputfield label {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .text-center button {
+        margin-top: 10px;
+    }
+
+    .socdescr {
+        padding-top: 60px;
+    }
+
+    .socdescr p {
+        font-size: 28px;
+    }
+
+    .socdescr ul li a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .socdescr ul li {
+        margin-right: 20px;
+    }
+
+    .socpicleft {
+        max-width: 400px;
+    }
+
+    .socsect {
+        height: 370px;
+    }
+
+    .champsect,
+    .testimonials {
+        padding: 70px 0;
+    }
+
+    .herosection__textblock h1 {
+        font-size: 32px;
+    }
+
+    .herosection__textblock p {
+        font-size: 16px;
+    }
+
+    .socdescr ul {
+        padding-left: 130px;
+    }
+}
+
+@media(max-width:360.8px) {
+    .socdescr ul {
+        padding-left: 80px;
+    }
+
+    .socpicleft {
+        opacity: 0.5;
+    }
 }

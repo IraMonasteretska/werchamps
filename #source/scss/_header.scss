@@ -267,7 +267,7 @@ header.header {
         background: transparent;
     }
 
-    .overlay  {
+    .overlay {
         position: fixed;
         left: 0;
         top: 0;
@@ -276,5 +276,59 @@ header.header {
         background: rgba(0, 0, 0, 0.7);
     }
 
+
+}
+
+@media(max-width:575.8px) {
+    header.header {
+        padding: 5px 0;
+
+        &.scrollheader {
+            .header__logo img {
+                max-width: 100px;
+            }
+        }
+    }
+
+    .header__logo img {
+        max-width: 120px;
+    }
+
+    .closemenu {
+        width: 32px;
+        height: 32px;
+        top: 20px;
+        right: 20px;
+
+        img {
+            max-width: 24px;
+        }
+    }
+
+    .header__section {
+        padding: 80px 50px 30px 40px;
+    }
+
+    header.header nav {
+        padding-right: 0;
+
+        ul li {
+            margin: 0 0 20px 0;
+            display: block;
+    
+            a {
+                display: block;
+                font-size: 17px;
+            }
+        }
+    }
+
+    .header__section .contactbtn {
+        max-width: 100%;
+    }
+
+    .mobmenu {
+        width: 100%;
+    }
 
 }
