@@ -164,6 +164,9 @@ $(document).ready(function () {
     });
 
     // cookie
-   
+    $('.cookiebtns button, .closecookie').click(function(){
+        $('.cookiesection').hide();
+    })
+    
 
 })

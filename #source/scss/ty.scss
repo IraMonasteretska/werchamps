@@ -1,0 +1,179 @@
+.tymodal {
+
+    .modal-content {
+        background: transparent;
+        border: none;
+        border-radius: 0;
+    }
+
+    .modal-dialog {
+        max-width: 1022px;
+    }
+
+    .modalwrapper {
+        background: url('../img/popup-bg.png') no-repeat center / 100% 100%;
+        padding: 47px 0 63px;
+        position: relative;
+    }
+
+    .modalcontent {
+        text-align: center;
+        max-width: 492px;
+        margin: 0 auto;
+
+        .modallogo {
+            display: inline-block;
+            margin-bottom: 21px;
+
+            img {
+                max-width: 137px;
+            }
+        }
+
+        p {
+            color: #fff;
+            font-size: 15px;
+            line-height: 160%;
+            margin-bottom: 35px;
+        }
+
+        .title {
+            margin-bottom: 35px;
+            font-size: 31px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #B6B6B6, #B4B4B4 22%, #F3F3F3 50%, #C4C4C4 73%, #E2E2E2 85%, #999999);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        .orangebtn {
+            margin: 0 auto;
+        }
+    }
+
+    .closemodal {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 50px;
+        top: 25px;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        img {
+            width: 16px;
+        }
+    }
+
+    .orangebtn {
+        transform: skew(-20deg);
+
+        span {
+            transform: skew(20deg);
+        }
+
+        &:hover {
+            transform: skew(20deg);
+
+            span {
+                transform: skew(-20deg);
+            }
+        }
+    }
+}
+
+@media(max-width:1599.8px) {
+    .tymodal .modalcontent .modallogo img {
+        max-width: 130px;
+    }
+
+    .tymodal .modalcontent .modallogo {
+        margin-bottom: 15px;
+    }
+
+    .tymodal .modalcontent .title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .tymodal .modal-dialog {
+        max-width: 900px;
+    }
+
+    .tymodal .modalwrapper {
+        padding: 40px 0 50px;
+    }
+
+    .tymodal .closemodal {
+        top: 15px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .tymodal .modal-dialog {
+        max-width: 700px;
+    }
+
+    .tymodal .modalcontent {
+        max-width: 380px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .tymodal .modalwrapper {
+        background: #313131;
+        position: relative;
+        padding: 40px 10px;
+
+        &::after,
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(90deg, #B6B6B6, #B4B4B4 22%, #F3F3F3 50%, #C4C4C4 73%, #E2E2E2 85%, #999999);
+        }
+
+        &::after {
+            left: 0;
+        }
+
+        &::before {
+            right: 0;
+        }
+    }
+
+    .tymodal .closemodal {
+        right: 15px;
+        top: 10px;
+    }
+
+    .tymodal .modalcontent .modallogo img {
+        max-width: 120px;
+    }
+
+    .tymodal .modalcontent .title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .tymodal .modalcontent p {
+        margin-bottom: 20px;
+    }
+
+    .tymodal  .orangebtn {
+        max-width: 270px;
+    }
+
+}

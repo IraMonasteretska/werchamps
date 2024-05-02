@@ -1,0 +1,118 @@
+.cookiesection {
+    max-width: 1071px;
+    width: 100%;
+    min-height: 336px;
+    padding: 45px 42px 33px 163px;
+    background: url('../img/cookiebg.png') no-repeat top left / 100% 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+
+    p {
+        font-size: 13px;
+        color: #fff;
+        line-height: 150%;
+    }
+
+    .title {
+        margin-bottom: 15px;
+        background: linear-gradient(90deg, #B6B6B6, #B4B4B4 22%, #F3F3F3 50%, #C4C4C4 73%, #E2E2E2 85%, #999999);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 17px;
+        text-transform: uppercase;
+        line-height: 130%;
+        font-weight: 800;
+    }
+}
+
+.closecookie {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    background: transparent;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    right: 30px;
+}
+
+.cookiebtns {
+    display: flex;
+    align-items: center;
+
+    button {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 600;
+        min-height: 41px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 3px 18px;
+        border: none;
+    }
+
+    .cookie-accept {
+        margin-right: 12px;
+        background: linear-gradient(90deg, #F5B324, #EE7624);
+        color: #fff;
+        transition: 0.3s;
+
+        &:hover {
+            box-shadow: 5px 5px 10px #9e511a;
+        }
+    }
+
+    .cookie-refuse {
+        background: linear-gradient(90deg, #F5B324, #EE7624);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        border: 1px solid transparent;
+        transition: 0.3s;
+
+        &:hover {
+            border: 1px solid #F5B324;
+            box-shadow: 5px 5px 10px #9e511a;
+        }
+    }
+}
+
+@media(max-width:1399.8px) {
+    .cookiesection {
+        max-width: 900px;
+    }
+
+}
+
+@media(max-width:1399.8px) {
+    .cookiesection {
+        padding-left: 130px;
+    }
+}
+
+@media(max-width:767.8px) {
+    .cookiesection {
+        padding-left: 110px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .cookiesection {
+        background: rgba(#131313, 0.95);
+        padding: 20px;
+        max-height: 100vh;
+        overflow: auto;
+        min-height: initial;
+    }
+
+    .closecookie {
+        top: 15px;
+        right: 15px;
+    }
+}
