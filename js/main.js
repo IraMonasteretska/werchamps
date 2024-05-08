@@ -5,7 +5,7 @@ $(document).ready(function () {
         effect: "fade",
         loop: true,
         autoplay: {
-          delay: 1600,
+          delay: 2600,
         },
         pagination: {
             el: ".swiper-pagination",
