@@ -3,10 +3,6 @@ $(document).ready(function () {
         loop: true,
         speed: 1000,
         effect: "fade",
-        loop: true,
-        autoplay: {
-          delay: 2600,
-        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
