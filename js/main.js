@@ -2,7 +2,11 @@ $(document).ready(function () {
     var swiper = new Swiper(".heroslider", {
         loop: true,
         speed: 1000,
-
+        effect: "fade",
+        loop: true,
+        autoplay: {
+          delay: 1600,
+        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
